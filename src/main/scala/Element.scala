@@ -1,4 +1,4 @@
-object Elemet {
+object Element {
   private class ArrayElement(val contents: Array[String]) extends Element
   private class LineElement(s: String) extends Element {
     val contents = Array(s)
@@ -17,7 +17,7 @@ object Elemet {
   def elem(chr: Char, width: Int, height: Int): Element = new UniformElement(chr, width, height)
 }
 
-import Elemet.elem
+import Element.elem
 
 abstract class Element {
   def contents: Array[String]
